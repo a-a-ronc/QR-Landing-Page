@@ -1,0 +1,31 @@
+plugins = []
+functionsDirectory = "C:\\Users\\AaronCendejas\\World Class Integration\\Engineering 2 - Documents\\Software\\QR-LandingPage\\vcards\\netlify\\functions"
+functionsDirectoryOrigin = "config-v1"
+headers = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "C:\\Users\\AaronCendejas\\World Class Integration\\Engineering 2 - Documents\\Software\\QR-LandingPage\\vcards"
+publishOrigin = "default"
+commandOrigin = "config"
+base = "C:\\Users\\AaronCendejas\\World Class Integration\\Engineering 2 - Documents\\Software\\QR-LandingPage\\vcards"
+command = "run build"
+functions = "C:\\Users\\AaronCendejas\\World Class Integration\\Engineering 2 - Documents\\Software\\QR-LandingPage\\vcards\\netlify\\functions"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]

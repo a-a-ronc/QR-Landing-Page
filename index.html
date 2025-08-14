@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Intralog Contact</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body { font-family: sans-serif; text-align: center; padding: 2rem; }
+    button { 
+      display: block; 
+      width: 80%; 
+      margin: 1rem auto; 
+      padding: 1rem; 
+      font-size: 1rem; 
+      border-radius: 8px; 
+      border: none; 
+      cursor: pointer;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>Intralog</h1>
+  <p>Select one:</p>
+  <button id="btn-contact">Contact Information</button>
+  <button id="btn-website">Company Website</button>
+  <button id="btn-linkedin">Company LinkedIn</button>
+
+  <script>
+    // Read ?person=Aaron-Cendejas from URL
+    const params = new URLSearchParams(window.location.search);
+    const person = params.get('person') || 'default';
+    
+    document.getElementById('btn-contact').onclick = () => {
+      // Navigate to the vCard in vcards/ folder
+      window.location.href = `vcards/${person}.vcf`;
+    };
+    document.getElementById('btn-website').onclick = () => {
+      window.location.href = 'https://www.intralog.io';
+    };
+    document.getElementById('btn-linkedin').onclick = () => {
+      window.location.href = 'https://www.linkedin.com/company/build-with-intralog/';
+    };
+  </script>
+</body>
+</html>
